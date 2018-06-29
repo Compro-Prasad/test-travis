@@ -1,7 +1,6 @@
-def test
-  puts "Hello, World in travis CI!"
+desc "Hello World test for CI in Ruby"
+task :test do
+  puts "Hello, travis CI!"
 end
 
-def default
-  test
-end
+task :default => :test
